@@ -5,7 +5,7 @@ resource "random_string" "suffix" {
 }
 
 resource "aws_iam_user" "example" {
-  name = "go-user-${random_string.suffix.result}"
+  name = "py-user-${random_string.suffix.result}"
 }
 
 resource "aws_iam_access_key" "example" {
